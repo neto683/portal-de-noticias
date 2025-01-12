@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 :root{
   --brand-color-light:#60A5FA;
   --brand-color-dark:#1D4ED8;
@@ -11,13 +12,29 @@
   --text-color-primary:#F1F5F9;
   --text-color-secondary:#CBD5E1;
   --fonte-family:"Archivo", serif;
-  --heading1:24px/135% var(--fonte-family);
-  --heading2:16px/140% var(--fonte-family);
-  --heading3:14px/140% var(--fonte-family);
-  --Span: 14px/145% var(--fonte-family);
-  --Paragraph:14px/160% var(--fonte-family);
+  --heading1:800 24px/135% var(--fonte-family);
+  --heading2:800 16px/140% var(--fonte-family);
+  --heading3:800 14px/140% var(--fonte-family);
+  --Span:600 14px/145% var(--fonte-family);
+  --text:400 16px/140% var(--fonte-family);
+  --text-sm:400 14px/160% var(--fonte-family);
 }
+
 body{
+  font: var(--text);
 color: var(--text-color-primary);
 background-color: var(--bg-color);
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover{
+  color:var(--brand-color-lightwww) ;
+}
+
+h1,h2,h3{
+  font: inherit;
 }
