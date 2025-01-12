@@ -1,0 +1,12 @@
+#nav-secondary{
+  display: flex;
+  padding-block: 14px;
+  padding-inline: 32px;
+  border: 1px solid ;
+}
+#nav-secondary > a{
+  margin: auto;
+}
+img{
+ justify-items: center;
+}
