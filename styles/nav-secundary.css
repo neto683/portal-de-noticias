@@ -2,7 +2,8 @@
   display: flex;
   padding-block: 14px;
   padding-inline: 32px;
-  border: 1px solid ;
+  border: 1px solid var(--stroke-color);
+  border-inline: none;
 }
 #nav-secondary > a{
   margin: auto;
