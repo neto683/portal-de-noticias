@@ -1,0 +1,6 @@
+#secondary{
+justify-content: space-between;
+border: 1px solid var(--stroke-color);
+border-inline: none;
+padding-block: 14px;
+}

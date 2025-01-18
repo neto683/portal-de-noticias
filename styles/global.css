@@ -12,10 +12,10 @@
   --text-color-primary:#F1F5F9;
   --text-color-secondary:#CBD5E1;
   --fonte-family:"Archivo", serif;
-  --heading1:800 24px/135% var(--fonte-family);
-  --heading2:800 16px/140% var(--fonte-family);
-  --heading3:800 14px/140% var(--fonte-family);
-  --Span:600 14px/145% var(--fonte-family);
+  --h1:800 24px/135% var(--fonte-family);
+  --h2:800 16px/140% var(--fonte-family);
+  --h3:800 14px/140% var(--fonte-family);
+  --text-span:600 14px/145% var(--fonte-family);
   --text:400 16px/140% var(--fonte-family);
   --text-sm:400 14px/160% var(--fonte-family);
 }
@@ -28,7 +28,7 @@ body{
 
 a{
   text-decoration: none;
-  color: inherit;
+  color: inherit;/* significa que estou herdando a cor do body*/
 }
 
 a:hover{
@@ -36,7 +36,7 @@ a:hover{
 }
 
 h1,h2,h3{
-  font: inherit;
+  font: inherit;/* significa que estou herdando a cor do do pai que eta dentro ou seja do body*/
 }
 img{
   max-width: 100%;
@@ -47,8 +47,13 @@ img{
   margin-inline: auto;
 }
 main{
-  margin-top: 40px;
   gap: 80px;
+  margin-top: 40px;
+  row-gap: 80px;
+  grid-template-areas: 
+  "featured featured"
+  "weekly weekly"
+  "ai aside";
 }
 .content-tag{
   display: inline-block;
@@ -60,8 +65,5 @@ main{
   letter-spacing: 0.04em;
   font: 500 10px/1.2 var(--fonte-family);
   color: var(--text-color-primary);
-
-
-
 }
 
